@@ -24,7 +24,7 @@ public class FirstController {
     public String goodByePage(@RequestParam(value = "name", required = false) String name,
                               @RequestParam(value = "surname", required = false) String surname,
                               Model model) {
-        model.addAttribute("message", "name: " + name + "surname: " + surname);
+        model.addAttribute("message", "имя: " + name + "фамилия: " + surname);
         System.out.println("Обращение на goodbye\nПрием параметров\nИмя: " + name + "\nФамилия: " + surname);
         return "first/goodbye";
 
