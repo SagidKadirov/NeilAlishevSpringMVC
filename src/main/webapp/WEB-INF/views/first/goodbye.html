@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="ISO-">
     <title>Goodbye</title>
 </head>
 <body>
 Goodbye!
 
-<a href="/first/hello">Say Hello </a> or <a href="/second/exit">Exit</a>
+<p><a href="/first/hello">Say Hello </a></p>
+<p><a href="/second/exit">Exit</a></p>
+<p><a href="/first/goodbye?name=sagid&surname=kadiov">Good Bye with parameters</a></p>
+<p><a href="/first/hello?name=sagid&surname=kadiov">Hello with parameters</a></p>
+
+<p th:text="${message}"></p>
 </body>
 </html>
